@@ -4,6 +4,8 @@
 [![License](https://img.shields.io/npm/l/nodeopti.svg)](https://github.com/your-username/nodeopti/blob/main/LICENSE)
 [![Downloads](https://img.shields.io/npm/dt/nodeopti.svg)](https://www.npmjs.com/package/nodeopti)
 
+![NodeOpti](https://raw.githubusercontent.com/LMLK-seal/NodeOpti/refs/heads/main/NodeOpti_logo.jpg)
+
 **Intelligent dependency optimization and code refactoring for Node.js applications**
 
 NodeOpti is a comprehensive command-line tool that analyzes, optimizes, and refactors your Node.js projects. It automatically identifies unused dependencies, applies performance-focused code transformations, and provides detailed insights into your project's dependency graph.
