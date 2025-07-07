@@ -1,0 +1,58 @@
+{
+  "name": "nodeopti",
+  "version": "1.0.1",
+  "description": "A Next-Generation Dependency Optimizer for Node.js",
+  "main": "src/index.js",
+  "bin": {
+    "nodeopti": "./bin/nodeopti.js"
+  },
+  "scripts": {
+    "test": "node test/run-tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://LMLK-Seal/LMLK-Seal/nodeopti.git"
+  },
+  "keywords": [
+    "optimizer",
+    "dependency",
+    "npm",
+    "pnpm",
+    "yarn",
+    "performance",
+    "security",
+    "codemod",
+    "tree",
+    "unused",
+    "dependencies"
+  ],
+  "author": "Yaniv Schwartz <Yaniv.schwartz1@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LMLK-Seal/nodeopti/issues"
+  },
+  "homepage": "https://github.com/LMLK-Seal/nodeopti#readme",
+  "dependencies": {
+    "@babel/generator": "^7.19.6",
+    "@babel/parser": "^7.19.6",
+    "@babel/traverse": "^7.19.6",
+    "chalk": "^4.1.2",
+    "cli-spinner": "^0.2.10",
+    "cli-table3": "^0.6.3",
+    "depcheck": "^1.4.3",
+    "fast-glob": "^3.2.12",
+    "inquirer": "^8.2.4",
+    "pnpm": "^7.14.0",
+    "yargs": "^17.6.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "nodeOpti": {
+    "virtualize": {
+      "chalk": {
+        "mock": "./dev-mocks/mock-chalk.js"
+      }
+    }
+  }
+}
