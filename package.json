@@ -1,6 +1,6 @@
 {
   "name": "nodeopti",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A Next-Generation Dependency Optimizer for Node.js",
   "main": "src/index.js",
   "bin": {
