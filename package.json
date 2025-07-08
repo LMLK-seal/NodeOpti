@@ -6,12 +6,18 @@
   "bin": {
     "nodeopti": "./bin/nodeopti.js"
   },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "test": "node test/run-tests.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://LMLK-Seal/LMLK-Seal/nodeopti.git"
+    "url": "git+https://github.com/LMLK-seal/NodeOpti.git"
   },
   "keywords": [
     "optimizer",
@@ -29,9 +35,9 @@
   "author": "Yaniv Schwartz <Yaniv.schwartz1@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/LMLK-Seal/nodeopti/issues"
+    "url": "https://github.com/LMLK-seal/NodeOpti/issues"
   },
-  "homepage": "https://github.com/LMLK-Seal/nodeopti#readme",
+  "homepage": "https://github.com/LMLK-seal/NodeOpti#readme",
   "dependencies": {
     "@babel/generator": "^7.19.6",
     "@babel/parser": "^7.19.6",
