@@ -29,3 +29,6 @@ report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 .env
 .env.local
 .env.*.local
+
+# Packaged builds
+*.tgz
