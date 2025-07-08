@@ -1,0 +1,50 @@
+# .github/workflows/ci.yml
+
+# Name of the workflow, which will appear in the "Actions" tab on GitHub
+name: Node.js CI
+
+# --- Triggers ---
+# This workflow will run automatically on these two events:
+on:
+  push:
+    branches: [ "main" ] # Runs every time you push to the 'main' branch
+  pull_request:
+    branches: [ "main" ] # Runs every time someone creates a pull request against 'main'
+
+# --- Jobs ---
+# A workflow is made up of one or more jobs that run in parallel or sequence
+jobs:
+  # The name of our job. You can call it anything.
+  build_and_test:
+
+    # The type of virtual machine to run the job on. 'ubuntu-latest' is the standard.
+    runs-on: ubuntu-latest
+
+    # We want to test against multiple versions of Node.js to ensure compatibility
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x] # We'll test against Node 18 and Node 20
+
+    # The sequence of steps that make up the job
+    steps:
+    # Step 1: Check out the code
+    # This downloads your repository's code onto the virtual machine
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    # Step 2: Set up the specified Node.js version
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm' # This will cache npm dependencies for faster runs
+
+    # Step 3: Install all dependencies
+    # `npm ci` is recommended for CI as it's faster and stricter than `npm install`
+    - name: Install dependencies
+      run: npm ci
+
+    # Step 4: Run the tests!
+    # This is the most important step. It runs the command from your package.json.
+    - name: Run tests
+      run: npm test
