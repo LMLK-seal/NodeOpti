@@ -133,9 +133,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Support
 
-- 📖 [Documentation](https://github.com/your-username/nodeopti/wiki)
-- 🐛 [Issue Tracker](https://github.com/your-username/nodeopti/issues)
-- 💬 [Discussions](https://github.com/your-username/nodeopti/discussions)
+- 📖 [Documentation](https://github.com/LMLK-Seal/nodeopti/wiki)
+- 🐛 [Issue Tracker](https://github.com/LMLK-Seal/nodeopti/issues)
+- 💬 [Discussions](https://github.com/LMLK-Seal/nodeopti/discussions)
 
 ---
 
